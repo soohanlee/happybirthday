@@ -1,4 +1,5 @@
 {
+  "homepage": "https://soohanlee.github.io/happybirthday/",
   "name": "happybirthday",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +16,7 @@
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-masonry-css": "^1.0.16",
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
     "sort-by": "^1.2.0",
@@ -26,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +52,7 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
-    "@types/styled-components": "^5.1.26"
+    "@types/styled-components": "^5.1.26",
+    "gh-pages": "^4.0.0"
   }
 }
